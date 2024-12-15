@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+ 
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.links {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+.links:hover {
+  color: #ffe0b2;
+  transform: translateY(-2px);
+}
+
+.links:active {
+  transform: translateY(0);
+}
+.cart-count {
+  background-color: #fff;
+  color: #ff5d00;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 50%;
+  margin-left: 5px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.navbar li svg {
+  font-size: 18px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.navbar li:hover svg {
+  transform: scale(1.2);
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .games-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cart {
+    padding: 10px;
+  }
+}

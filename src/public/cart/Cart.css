@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: white;
+  margin: 0;
+}
+
+.cart {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cart h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.cart li {
+  background-color: #222;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cart li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.cart li img {
+  width: 100px; 
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.cart li .game-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ff5d00;
+  margin-bottom: 8px;
+}
+
+.cart li .game-price {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.cart li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart li button:hover {
+  background-color: #c82333;
+}
+
+.cart p {
+  text-align: center;
+  font-size: 18px;
+  color: #aaa;
+}
+.cart li {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: black;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.cart li img {
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px; 
+}
+
+.cart li .game-info {
+  text-align: center;
+}
+
+.cart li button  {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px; 
+}
+
+.cart li button:hover {
+  background-color: #c82333;
+}
+.cart li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 5px;
+}
+
+.cart li button:nth-child(2) {
+  background-color: #28a745;
+}
+
+.cart li button:nth-child(2):hover {
+  background-color: #218838;
+}
+
+@media (max-width: 480px) {
+  .cart {
+    padding: 10px;
+  }
+
+  .cart h2 {
+    font-size: 20px;
+  }
+
+  .cart li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cart li img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .cart li button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart {
+    padding: 15px;
+  }
+
+  .cart h2 {
+    font-size: 22px;
+  }
+
+  .cart li {
+    flex-wrap: wrap;
+  }
+
+  .cart li img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  .cart li button {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .cart li img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .cart li button {
+    padding: 8px 15px;
+  }
+}
+.footer {
+  background-color: #1c1c1c;
+  padding: 40px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  width: 30%;
+}
+
+.footer-section h4 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  display: block;
+  color: #bbb;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+}
+
+.social-icons a {
+  display: block;
+  color: #bbb;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+.footer-section input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+.footer-section .subscribe-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-section .subscribe-btn:hover {
+  background-color: #0056b3;
+}
